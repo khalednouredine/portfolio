@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khaled Nouredine | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e1e2f, #3e3e5e);
+      color: #fff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(120deg, #0f0f1c, #1a1a2e);
+      padding: 3rem 2rem;
+      text-align: center;
+      animation: fadeIn 2s ease forwards;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 5px;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      border-radius: 50px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      background: linear-gradient(90deg, #00f2fe, #4facfe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: slideIn 1.2s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      opacity: 0.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #00f2fe;
+      color: #000;
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+      position: relative;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #4facfe;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #00f2fe;
+      margin-top: 8px;
+      border-radius: 4px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.07);
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      transition: transform 0.4s ease, background 0.3s ease;
+      backdrop-filter: blur(4px);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill {
+      background-color: #4facfe;
+      color: #fff;
+      padding: 0.7rem 1rem;
+      border-radius: 30px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .skill:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    footer i {
+      margin: 0 8px;
+      font-size: 1.2rem;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideIn {
+      from {transform: translateY(-20px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Khaled Nouredine</h1>
+    <p>Développeur Front-End & Technicien spécialisé en digital</p>
+    <nav>
+      <a href="#about"><i class="fas fa-user"></i> À propos</a>
+      <a href="#skills"><i class="fas fa-laptop-code"></i> Compétences</a>
+      <a href="#projects"><i class="fas fa-code"></i> Projets</a>
+      <a href="#experience"><i class="fas fa-briefcase"></i> Expériences</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </header>
+
+  <!-- Sections déjà présentes seront réutilisées ici avec animations -->
+
+  <section id="about" data-aos="fade-up">
+    <h2>À propos de moi</h2>
+    <div class="card">
+      <p>Je m'appelle Khaled Nouredine, j'ai 20 ans et je viens des Comores. Diplômé en développement digital à l'ISTA Dakhla, Maroc, j'ai acquis des compétences solides en front-end (HTML, CSS, JS) et back-end avec Laravel. Je suis passionné par le web, les interfaces modernes et la technologie. Je suis également ouvert aux opportunités dans les centres d'appels pour développer mes compétences en communication et relation client.</p>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>Compétences</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Laravel</div>
+      <div class="skill">Swiper.js</div>
+      <div class="skill">PHP</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">Français</div>
+      <div class="skill">Anglais</div>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Projets</h2>
+    <div class="card">
+      <h3>Site web pour la Direction Provinciale MENPS Oued Ed-Dahab</h3>
+      <p>Projet réalisé pendant mon stage au ministère. Création d’un site officiel présentant les services, projets et contacts de la direction. Utilisation de HTML, CSS, JS et intégration de composants dynamiques.</p>
+    </div>
+    <div class="card">
+      <h3>Mini application de gestion de contacts avec Laravel</h3>
+      <p>Développement d'une application CRUD permettant d'ajouter, modifier et supprimer des contacts. Architecture MVC, routage Laravel, et base de données MySQL.</p>
+    </div>
+    <div class="card">
+      <h3>Interface Web dynamique avec Swiper.js</h3>
+      <p>Conception d’une galerie interactive avec des carrousels multiples et responsive, adaptée pour présenter des contenus modernes.</p>
+    </div>
+  </section>
+
+  <section id="experience" data-aos="fade-up">
+    <h2>Expériences</h2>
+    <div class="card">
+      <h3>Stage au Ministère de l'Éducation Nationale (MENPS)</h3>
+      <p>Participation à la création d’un site web pour une direction provinciale, conception des pages principales, intégration responsive, et mise en place d’un système de contact par email.</p>
+    </div>
+    <div class="card">
+      <h3>Projets personnels</h3>
+      <p>Création de plusieurs projets web centrés sur l'interaction utilisateur et les animations front-end. Exploration de librairies modernes comme Swiper.js et AOS.</p>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email : <a href="mailto:khalednouredine9@gmail.com" style="color: #4facfe;">khalednouredine9@gmail.com</a></p>
+      <p>WhatsApp : <a href="https://wa.me/212XXXXXXXXX" style="color: #4facfe;">+212 X XX XX XX XX</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Khaled Nouredine — Tous droits réservés
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
